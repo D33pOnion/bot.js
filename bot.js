@@ -1,4 +1,4 @@
-const { Client, RichEmbed } = require('discord.js'); //Ce que le bot à besoin /
+const { Client, RichEmbed } = require('discord.js');
 const config = require('./config.json');
 const client= new Client();
 const GoogleSpreadsheet = require('google-spreadsheet');
