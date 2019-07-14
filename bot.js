@@ -141,7 +141,7 @@ client.on('message', async message => {
                                 .setThumbnail('https://i.ibb.co/ZXPSmtq/mascotte5.png')
                               .setFooter('Bot créé par DEEPonion');
                               
-                      await accessSpreadsheet(embed1)
+                      await accessSpreadsheet(embed1)           //here starts the problem
                       .then(() => message.author.send(embed1))
                       .then(message => {
                         message.react('✅')
