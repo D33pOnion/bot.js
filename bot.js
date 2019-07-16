@@ -17,6 +17,9 @@ client.on('messageReactionAdd', (reaction, user) => {
 client.on('messageReactionRemove', (reaction, user) => {
 	console.log(`${user.username} removed their "${reaction.emoji.name}" reaction.`);
 });
+client.on("debug", function(info){
+    console.log(`debug -> ${info}`);
+});
 client.on('message', async message => {
     if (message.content.toLowerCase().startsWith('!bot')){
     
